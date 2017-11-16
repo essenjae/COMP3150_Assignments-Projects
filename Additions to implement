@@ -1,8 +1,10 @@
 
 Off network blocking for medical staff login. String tokenize the IP and check the network address.
 
-Patient check-in for patients on the way to the medical office.
+Patient check-in for patients on the way to the medical office. - try/ test login from multiple sources at same time. and demo that
 
 View medical files.
 
 Video Demo.
+
+find way to show * when inputting password.
