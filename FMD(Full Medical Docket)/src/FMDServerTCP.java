@@ -164,8 +164,18 @@ public class FMDServerTCP {
 		file.addRecords();
 		file.closeFile();
 	}
-	
-	
+	//incomplete but functional if called
+	public static void writeToTxtFile(String input){//writes check-in information to a file, creating a queue, file may be read and formed into an array for easy checking. thinking of limiting the number of patients per day to reduce scalability and the level of consideration we need to place on the queuing aspect to keep it simple
+		String FILE = "./Check-in.txt";//file named Check-in is created on server
+		try(BufferedWriter writer = new BufferedWriter(new FileWriter(FILE, true))){//allows file to be appended
+			writer.write(input);
+			writer.write("#\n");//delimiter between patient check-ins
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}	
+		
+	}
 	
 	
 	
